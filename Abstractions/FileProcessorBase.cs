@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AzUnzipEverything.Abstractions
+namespace AzFunctionUnzip.Abstractions
 {
     public abstract class FileProcessorBase : IFileProcessor
     {
