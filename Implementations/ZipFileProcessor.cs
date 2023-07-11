@@ -1,5 +1,5 @@
-﻿using AzUnzipEverything.Abstractions;
-using AzUnzipEverything.Infrastructure.Settings;
+﻿using AzFunctionUnzip.Abstractions;
+using AzFunctionUnzip.Infrastructure.Settings;
 using Microsoft.Extensions.Logging;
 using Microsoft.WindowsAzure.Storage.Blob;
 using SharpCompress.Archives.Zip;
@@ -9,7 +9,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzUnzipEverything.Implementations
+namespace AzFunctionUnzip.Implementations
 {
     public class ZipFileProcessor : FileProcessorBase
     {
