@@ -1,4 +1,4 @@
-﻿namespace AzUnzipEverything
+﻿namespace AzFunctionUnzip
 {
     public static class Constants
     {
