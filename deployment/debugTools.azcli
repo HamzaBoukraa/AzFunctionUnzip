@@ -1,14 +1,14 @@
 
 
-az group create -n c5mAzUnzip -l eastus
+az group create -n grpAzUnzip -l francecentral
 
 # validate command
-az deployment group  validate -g c5mAzUnzip --template-file "deployment/deployAzure.json" --verbose 
+az deployment group  validate -g grpAzUnzip --template-file "deployment/deployAzure.json" --verbose 
 
 # validate with Parameter file
-az deployment group  validate -g c5mAzUnzip --template-file "deployment/deployAzure.json" --parameters "deployment/deployAzure.parameters.json"  --verbose 
+az deployment group  validate -g grpAzUnzip --template-file "deployment/deployAzure.json" --parameters "deployment/deployAzure.parameters.json"  --verbose 
 
 # deploy it
-az deployment group  create -n cloud5mins -g c5mAzUnzip --template-file "deployment/deployAzure.json" --parameters "deployment/deployAzure.parameters.json" --verbose  
+az deployment group  create -n cloud5mins -g grpAzUnzip --template-file "deployment/deployAzure.json" --parameters "deployment/deployAzure.parameters.json" --verbose  
 
-# az deployment create -n cloud5mins -r c5mAzUnzip -l eastus --template-file "deployment/deployAzure.json" --parameters "deployment/deployAzure.parameters.json" --verbose
+# az deployment create -n cloud5mins -r grpAzUnzip -l francecentral --template-file "deployment/deployAzure.json" --parameters "deployment/deployAzure.parameters.json" --verbose
