@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace AzUnzipEverything.Infrastructure.Settings
+namespace AzFunctionUnzip.Infrastructure.Settings
 {
     [ExcludeFromCodeCoverage]
     public class SecretSettings
