@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "baseName": {
-      "defaultValue": "UnzipEverything",
+      "defaultValue": "AzFunctionUnzip",
       "type": "string",
       "metadata": {
         "description": "Name use as base-template to named the resources deployed in Azure."
@@ -47,7 +47,7 @@
     "KeyVaultName": "[toLower(concat(parameters('baseName'), '-kv-', variables('suffix')))]",
     "funcStorageName": "[tolower(concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),16)), 'stg', variables('suffix')))]",
     "serverFarmName": "[concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),14)), '-srv-', variables('suffix'))]",
-    "repoURL": "https://github.com/FBoucher/AzUnzipEverything.git",
+    "repoURL": "https://github.com/HamzaBoukraa/AzFunctionUnzip.git",
     "fileStorageName": "[tolower(concat(substring(parameters('MonitorStorageName'), 0, min(length(parameters('MonitorStorageName')),16)), 'fstg', variables('suffix')))]"
   },
   "resources": [
@@ -94,7 +94,7 @@
               "value": "dotnet"
             },
             {
-              "name": "cloud5mins_storage",
+              "name": "azfn_storage",
               "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('fileStorageName'), ';AccountKey=', listKeys(variables('fileStorageName'),'2015-05-01-preview').key1)]"
             },
             {
