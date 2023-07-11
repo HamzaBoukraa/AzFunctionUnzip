@@ -1,6 +1,6 @@
-﻿using AzUnzipEverything.Abstractions;
-using AzUnzipEverything.Implementations;
-using AzUnzipEverything.Infrastructure.Settings;
+﻿using AzFunctionUnzip.Abstractions;
+using AzFunctionUnzip.Implementations;
+using AzFunctionUnzip.Infrastructure.Settings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -8,7 +8,7 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using System.Collections.Generic;
 
-namespace AzUnzipEverything.Extensions
+namespace AzFunctionUnzip.Extensions
 {
     public static class ServiceCollectionExtensions
     {
