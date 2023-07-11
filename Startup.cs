@@ -1,11 +1,11 @@
-﻿using AzUnzipEverything;
-using AzUnzipEverything.Extensions;
+﻿using AzFunctionUnzip;
+using AzFunctionUnzip.Extensions;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using System;
 
 [assembly: FunctionsStartup(typeof(Startup))]
-namespace AzUnzipEverything
+namespace AzFunctionUnzip
 {
     public class Startup : FunctionsStartup
     {
