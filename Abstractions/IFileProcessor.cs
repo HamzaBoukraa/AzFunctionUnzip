@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 
-namespace AzUnzipEverything.Abstractions
+namespace AzFunctionUnzip.Abstractions
 {
     public interface IFileProcessor
     {
